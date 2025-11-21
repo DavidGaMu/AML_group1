@@ -9,3 +9,6 @@ The data pool would be of increasing complexity, starting by mnist, then cifar-1
 The continual learning method would be LwF, and the multi-level curriculum learning would be divided in task ordering and data ordering. For task ordering the methods would be difficulty based, similarity based and adaptive sequencing. For sample ordering the methods would be easy to hard, confidence bias and self-paced.
 
 The metrics used shall be the accumulated accuracy, the forgetting factor and the learning time difference.
+
+
+In order to sort the difficulty of each data instance, the method could be by amount of edges and by the amount of variation amongst all pixels of the image (in this case, the less variation the higher the complexity)
