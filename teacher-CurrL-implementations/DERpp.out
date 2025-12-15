@@ -1,0 +1,188 @@
+Using device: cuda
+============================================================
+STANDARD DER++ with Minimal Memory (10 examples per task)
+Task-Incremental Learning on Fashion-MNIST
+============================================================
+Algorithm: Pure DER++ (no distillation)
+Target: Achieve ≥ 0.70 average accuracy with minimal memory
+============================================================
+
+============================================================
+Preparing Fashion-MNIST Task-Incremental Data
+============================================================
+Task 0 (['Pullover', 'Dress']): 9600 train, 1200 val, 1200 test samples
+Task 1 (['Trouser', 'Bag']): 9600 train, 1200 val, 1200 test samples
+Task 2 (['Ankle boot', 'Sneaker', 'Sandal']): 14400 train, 1800 val, 1800 test samples
+Task 3 (['T-shirt/top', 'Coat', 'Shirt']): 14400 train, 1800 val, 1800 test samples
+
+============================================================
+Initializing Model and Components
+============================================================
+
+============================================================
+TRAINING TASK 0: ['Pullover', 'Dress']
+============================================================
+  Added new task head for task 0 with 2 classes
+  Epoch 1: Total Loss = 0.2149, Val Acc = 0.967
+  Epoch 2: Total Loss = 0.1168, Val Acc = 0.971
+  Epoch 3: Total Loss = 0.1051, Val Acc = 0.973
+  Epoch 4: Total Loss = 0.0982, Val Acc = 0.973
+  Epoch 5: Total Loss = 0.0931, Val Acc = 0.973
+  Epoch 6: Total Loss = 0.0883, Val Acc = 0.975
+  Epoch 7: Total Loss = 0.0838, Val Acc = 0.975
+  Epoch 8: Total Loss = 0.0838, Val Acc = 0.976
+  Epoch 9: Total Loss = 0.0792, Val Acc = 0.977
+  Epoch 10: Total Loss = 0.0781, Val Acc = 0.977
+  Epoch 11: Total Loss = 0.0768, Val Acc = 0.977
+  Epoch 12: Total Loss = 0.0745, Val Acc = 0.976
+  Epoch 13: Total Loss = 0.0735, Val Acc = 0.977
+  Epoch 14: Total Loss = 0.0709, Val Acc = 0.977
+  Epoch 15: Total Loss = 0.0695, Val Acc = 0.977
+  Epoch 16: Total Loss = 0.0712, Val Acc = 0.977
+  Epoch 17: Total Loss = 0.0677, Val Acc = 0.977
+  Epoch 18: Total Loss = 0.0685, Val Acc = 0.977
+  Epoch 19: Total Loss = 0.0680, Val Acc = 0.977
+  Epoch 20: Total Loss = 0.0678, Val Acc = 0.977
+
+  Selecting important samples for task 0...
+  Buffer: Added 15 samples for task 0
+
+  Evaluating on all tasks up to 0...
+    Task 0 accuracy: 0.981
+
+  Average accuracy on all tasks so far: 0.981
+
+============================================================
+TRAINING TASK 1: ['Trouser', 'Bag']
+============================================================
+  Added new task head for task 1 with 2 classes
+  Epoch 1: Total Loss = 0.9397, Val Acc = 0.337
+  Epoch 2: Total Loss = 0.8910, Val Acc = 0.952
+  Epoch 3: Total Loss = 0.6092, Val Acc = 0.979
+  Epoch 4: Total Loss = 0.3317, Val Acc = 0.982
+  Epoch 5: Total Loss = 0.1723, Val Acc = 0.989
+  Epoch 6: Total Loss = 0.1842, Val Acc = 0.992
+  Epoch 7: Total Loss = 0.2530, Val Acc = 0.996
+  Epoch 8: Total Loss = 0.3446, Val Acc = 0.996
+  Epoch 9: Total Loss = 0.4282, Val Acc = 0.998
+  Epoch 10: Total Loss = 0.5007, Val Acc = 0.998
+  Epoch 11: Total Loss = 0.5914, Val Acc = 0.998
+  Epoch 12: Total Loss = 0.6717, Val Acc = 0.996
+  Epoch 13: Total Loss = 0.7496, Val Acc = 0.999
+  Epoch 14: Total Loss = 0.8034, Val Acc = 0.999
+  Epoch 15: Total Loss = 0.8727, Val Acc = 0.999
+  Epoch 16: Total Loss = 0.9617, Val Acc = 0.999
+  Epoch 17: Total Loss = 1.0804, Val Acc = 0.998
+  Epoch 18: Total Loss = 1.0697, Val Acc = 1.000
+  Epoch 19: Total Loss = 1.0761, Val Acc = 1.000
+  Epoch 20: Total Loss = 1.1175, Val Acc = 1.000
+
+  Selecting important samples for task 1...
+  Buffer: Added 15 samples for task 1
+
+  Evaluating on all tasks up to 1...
+    Task 0 accuracy: 0.919
+    Task 1 accuracy: 0.998
+
+  Average accuracy on all tasks so far: 0.959
+
+============================================================
+TRAINING TASK 2: ['Ankle boot', 'Sneaker', 'Sandal']
+============================================================
+  Added new task head for task 2 with 3 classes
+  Epoch 1: Total Loss = 2.1851, Val Acc = 0.933
+  Epoch 2: Total Loss = 2.4262, Val Acc = 0.955
+  Epoch 3: Total Loss = 2.5021, Val Acc = 0.963
+  Epoch 4: Total Loss = 2.5208, Val Acc = 0.967
+  Epoch 5: Total Loss = 2.5247, Val Acc = 0.968
+  Epoch 6: Total Loss = 2.4943, Val Acc = 0.969
+  Epoch 7: Total Loss = 2.4995, Val Acc = 0.969
+  Epoch 8: Total Loss = 2.5627, Val Acc = 0.972
+  Epoch 9: Total Loss = 2.5592, Val Acc = 0.971
+  Epoch 10: Total Loss = 2.5428, Val Acc = 0.974
+  Epoch 11: Total Loss = 2.5596, Val Acc = 0.971
+  Epoch 12: Total Loss = 2.5616, Val Acc = 0.974
+  Epoch 13: Total Loss = 2.5886, Val Acc = 0.975
+  Epoch 14: Total Loss = 2.6290, Val Acc = 0.976
+  Epoch 15: Total Loss = 2.5982, Val Acc = 0.974
+  Epoch 16: Total Loss = 2.5944, Val Acc = 0.977
+  Epoch 17: Total Loss = 2.6021, Val Acc = 0.976
+  Epoch 18: Total Loss = 2.6099, Val Acc = 0.977
+  Epoch 19: Total Loss = 2.6190, Val Acc = 0.977
+  Epoch 20: Total Loss = 2.6128, Val Acc = 0.976
+
+  Selecting important samples for task 2...
+  Buffer: Added 15 samples for task 2
+
+  Evaluating on all tasks up to 2...
+    Task 0 accuracy: 0.854
+    Task 1 accuracy: 0.800
+    Task 2 accuracy: 0.963
+
+  Average accuracy on all tasks so far: 0.873
+
+============================================================
+TRAINING TASK 3: ['T-shirt/top', 'Coat', 'Shirt']
+============================================================
+  Added new task head for task 3 with 3 classes
+  Epoch 1: Total Loss = 2.6037, Val Acc = 0.176
+  Epoch 2: Total Loss = 2.5163, Val Acc = 0.417
+  Epoch 3: Total Loss = 2.2789, Val Acc = 0.691
+  Epoch 4: Total Loss = 2.0587, Val Acc = 0.728
+  Epoch 5: Total Loss = 1.9233, Val Acc = 0.755
+  Epoch 6: Total Loss = 1.8496, Val Acc = 0.768
+  Epoch 7: Total Loss = 1.8533, Val Acc = 0.783
+  Epoch 8: Total Loss = 1.8891, Val Acc = 0.801
+  Epoch 9: Total Loss = 1.9183, Val Acc = 0.815
+  Epoch 10: Total Loss = 1.9185, Val Acc = 0.829
+  Epoch 11: Total Loss = 1.9639, Val Acc = 0.845
+  Epoch 12: Total Loss = 2.0060, Val Acc = 0.839
+  Epoch 13: Total Loss = 2.0814, Val Acc = 0.845
+  Epoch 14: Total Loss = 2.0971, Val Acc = 0.855
+  Epoch 15: Total Loss = 2.1717, Val Acc = 0.852
+  Epoch 16: Total Loss = 2.2450, Val Acc = 0.857
+  Epoch 17: Total Loss = 2.2763, Val Acc = 0.855
+  Epoch 18: Total Loss = 2.2985, Val Acc = 0.853
+  Epoch 19: Total Loss = 2.3886, Val Acc = 0.854
+  Epoch 20: Total Loss = 2.4511, Val Acc = 0.867
+
+  Selecting important samples for task 3...
+  Buffer: Added 15 samples for task 3
+
+  Evaluating on all tasks up to 3...
+    Task 0 accuracy: 0.886
+    Task 1 accuracy: 0.960
+    Task 2 accuracy: 0.663
+    Task 3 accuracy: 0.891
+
+  Average accuracy on all tasks so far: 0.850
+
+============================================================
+FINAL EVALUATION ON ALL TASKS
+============================================================
+Task 0 (['Pullover', 'Dress']): Accuracy = 0.886
+Task 1 (['Trouser', 'Bag']): Accuracy = 0.960
+Task 2 (['Ankle boot', 'Sneaker', 'Sandal']): Accuracy = 0.663
+Task 3 (['T-shirt/top', 'Coat', 'Shirt']): Accuracy = 0.891
+
+============================================================
+DER++ RESULTS SUMMARY
+============================================================
+Average Accuracy: 0.850 ± 0.112
+Minimum Accuracy: 0.663
+Maximum Accuracy: 0.960
+
+Memory Usage:
+  Stored samples per task: 15
+  Total stored samples: 60
+  Buffer memory: ~76.8KB (estimated)
+
+DER++ Configuration:
+  α (logit matching weight): 0.5
+  β (replay classification weight): 1.0
+  Memory per task: 15 samples
+  Buffer strategy: Importance sampling (confidence + diversity)
+
+Model saved to 'derpp_standard_model.pth'
+
+Training completed!

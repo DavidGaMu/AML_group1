@@ -1,0 +1,76 @@
+
+=== Training task 0 (['Pullover', 'Dress']) ===
+Epoch 0: Loss 0.1860, Val Acc: 0.970
+Epoch 1: Loss 0.1089, Val Acc: 0.970
+Epoch 2: Loss 0.0983, Val Acc: 0.973
+Epoch 3: Loss 0.0935, Val Acc: 0.973
+Epoch 4: Loss 0.0878, Val Acc: 0.976
+Epoch 5: Loss 0.0837, Val Acc: 0.975
+Epoch 6: Loss 0.0783, Val Acc: 0.976
+Epoch 7: Loss 0.0791, Val Acc: 0.977
+Epoch 8: Loss 0.0751, Val Acc: 0.977
+Epoch 9: Loss 0.0750, Val Acc: 0.978
+Epoch 10: Loss 0.0754, Val Acc: 0.978
+Epoch 11: Loss 0.0746, Val Acc: 0.977
+Epoch 12: Loss 0.0749, Val Acc: 0.977
+Epoch 13: Loss 0.0734, Val Acc: 0.976
+Epoch 14: Loss 0.0736, Val Acc: 0.978
+Early stopping at epoch 14
+
+=== Training task 1 (['Trouser', 'Bag']) ===
+Epoch 0: Loss 0.2497, Val Acc: 0.993
+Epoch 1: Loss 0.1460, Val Acc: 0.996
+Epoch 2: Loss 0.1226, Val Acc: 0.998
+Epoch 3: Loss 0.1100, Val Acc: 0.999
+Epoch 4: Loss 0.1064, Val Acc: 0.999
+Epoch 5: Loss 0.0972, Val Acc: 0.997
+Epoch 6: Loss 0.0939, Val Acc: 0.998
+Epoch 7: Loss 0.0919, Val Acc: 0.998
+Epoch 8: Loss 0.0871, Val Acc: 0.999
+Early stopping at epoch 8
+
+=== Training task 2 (['Ankle boot', 'Sneaker', 'Sandal']) ===
+Epoch 0: Loss 0.8194, Val Acc: 0.921
+Epoch 1: Loss 0.6198, Val Acc: 0.948
+Epoch 2: Loss 0.5626, Val Acc: 0.951
+Epoch 3: Loss 0.5333, Val Acc: 0.957
+Epoch 4: Loss 0.5145, Val Acc: 0.960
+Epoch 5: Loss 0.5092, Val Acc: 0.958
+Epoch 6: Loss 0.5081, Val Acc: 0.958
+Epoch 7: Loss 0.5074, Val Acc: 0.960
+Epoch 8: Loss 0.5017, Val Acc: 0.959
+Epoch 9: Loss 0.4959, Val Acc: 0.962
+Epoch 10: Loss 0.4853, Val Acc: 0.959
+Epoch 11: Loss 0.4697, Val Acc: 0.965
+Epoch 12: Loss 0.4581, Val Acc: 0.968
+Epoch 13: Loss 0.4405, Val Acc: 0.968
+Epoch 14: Loss 0.4306, Val Acc: 0.970
+
+=== Training task 3 (['T-shirt/top', 'Coat', 'Shirt']) ===
+Epoch 0: Loss 0.7927, Val Acc: 0.812
+Epoch 1: Loss 0.6445, Val Acc: 0.824
+Epoch 2: Loss 0.5927, Val Acc: 0.835
+Epoch 3: Loss 0.5510, Val Acc: 0.842
+Epoch 4: Loss 0.5291, Val Acc: 0.848
+Epoch 5: Loss 0.5029, Val Acc: 0.853
+Epoch 6: Loss 0.4855, Val Acc: 0.860
+Epoch 7: Loss 0.4707, Val Acc: 0.861
+Epoch 8: Loss 0.4569, Val Acc: 0.864
+Epoch 9: Loss 0.4521, Val Acc: 0.865
+Epoch 10: Loss 0.4514, Val Acc: 0.866
+Epoch 11: Loss 0.4422, Val Acc: 0.865
+Epoch 12: Loss 0.4447, Val Acc: 0.865
+Epoch 13: Loss 0.4420, Val Acc: 0.863
+Epoch 14: Loss 0.4403, Val Acc: 0.865
+
+==================================================
+FINAL EVALUATION
+==================================================
+Task 0 (['Pullover', 'Dress']): Accuracy = 0.970
+Task 1 (['Trouser', 'Bag']): Accuracy = 0.987
+Task 2 (['Ankle boot', 'Sneaker', 'Sandal']): Accuracy = 0.829
+Task 3 (['T-shirt/top', 'Coat', 'Shirt']): Accuracy = 0.883
+
+Average Accuracy: 0.917
+Std Deviation: 0.064
+Average Forgetting: 0.053
