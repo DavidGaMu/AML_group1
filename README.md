@@ -1,14 +1,2 @@
-# AML_group1
-
-
-The project aims at empirically studying the effect of multi-level curriculum learning on continual learning, by checking average accuracy, forgetting factor and learning speed. 
-
-The data pool would be of increasing complexity, starting by mnist, then cifar-10 and finally cifar-100. 
-
-
-The continual learning method would be LwF, and the multi-level curriculum learning would be divided in task ordering and data ordering. For task ordering the methods would be difficulty based, similarity based and adaptive sequencing. For sample ordering the methods would be easy to hard, confidence bias and self-paced.
-
-The metrics used shall be the accumulated accuracy, the forgetting factor and the learning time difference.
-
-
-In order to sort the difficulty of each data instance, the method could be by amount of edges and by the amount of variation amongst all pixels of the image (in this case, the less variation the higher the complexity)
+# Abstract
+This paper presents a comprehensive empirical investigation into the interaction between Continual Learning (CL) and Curriculum Learning (CurL). While CL methods such as Learning without Forgetting (LwF), Elastic Weight Consolidation (EWC), and replay-based approaches have shown promise in mitigating catastrophic forgetting, they typically overlook sample ordering within tasks. Concurrently, CurL strategies explicitly manipulate data sequencing to optimize learning trajectories. We systematically evaluate three representative CL algorithms under multiple curriculum strategies: heuristic-based, self-paced, and teacher-driven curricula. Our study aims to quantify the impact of curriculum design on CL performance. Results demonstrate how curriculum strategies can significantly influence CL dynamics.
